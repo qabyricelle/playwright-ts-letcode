@@ -17,5 +17,9 @@ steps:
 
 - script: |
     npm install
-    npx playwright install
-  displayName: 'npm and playwright install'
+  displayName: 'npm install'
+
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: self
