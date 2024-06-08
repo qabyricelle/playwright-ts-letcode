@@ -10,16 +10,14 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+- checkout: self
+  displayName: "Checkout repo"
 
 - script: |
     npm install
-  displayName: 'npm install'
+    npx playwright install
+  displayName: 'Installation'
 
-- task: PowerShell@2
-  inputs:
-    targetType: 'inline'
-    script: 'npx playwright install'
+- script: |
+    npm run test
+  displayName: "Functional Test"
