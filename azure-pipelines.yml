@@ -19,5 +19,11 @@ steps:
   displayName: 'Installation'
 
 - script: |
-    npm run test
+    npx playwright test
   displayName: "Functional Test"
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'NUnit'
+    testResultsFiles: '**/TEST-*.xml'
+    testRunTitle: 'test-results'
