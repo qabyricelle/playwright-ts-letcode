@@ -24,6 +24,8 @@ steps:
 
 - task: PublishTestResults@2
   inputs:
-    testResultsFormat: 'NUnit'
+    searchFolder: 'test-results'
+    testResultsFormat: 'JUnit'
     testResultsFiles: 'test-results.xml'
     testRunTitle: 'test-results'
+  condition: succeededOrFailed()
