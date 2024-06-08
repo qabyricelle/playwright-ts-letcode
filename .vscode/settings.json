@@ -1,0 +1,6 @@
+{
+    "prettier.tabWidth": 4,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "prettier.semi": false
+}

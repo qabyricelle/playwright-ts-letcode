@@ -4,7 +4,7 @@
   "description": "Practice test automation on letcode.in",
   "main": "index.js",
   "scripts": {
-    "test": "playwright test",
+    "test": "playwright test --headed",
     "allure-generate": "allure generate allure-results -o allure-report --clean",
     "allure-open": "allure open allure-report"
   },
