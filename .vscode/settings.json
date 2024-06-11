@@ -2,5 +2,12 @@
     "prettier.tabWidth": 4,
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "vscode.typescript-language-features",
-    "prettier.semi": false
+    "prettier.semi": false,
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.07)",
+        "rgba(127,255,127,0.07)",
+        "rgba(255,127,255,0.07)",
+        "rgba(79,236,236,0.07)"
+    ],
+    "indentRainbow.errorColor": "rgba(128,32,32,0.6)"
 }
